@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfoilo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="portfolio2.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -85,13 +87,13 @@
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="container">
         <h2  data-aos="zoom-out-down">Creative Works</h2>
         <div class="projects-grid">
             <div class="project-card" data-aos="zoom-out-up">
                 <h3>E-project of my institute</h3>
                 <div>
-                    <img src="Screenshot (3).png" data-aos="flip-down" class="img" alt="project 1">
+                    <img src="Screenshot (3).png" class="img" alt="project 1">
                 </div>
                 <p>A group project . Features include user authentication, product management, and payment integration.
                 </p>
@@ -106,7 +108,7 @@
             </div>
             <div class="project-card" data-aos="zoom-out-up">
                 <h3>Weather-app</h3>
-                <img src="hassan73575.github.io_Weather-app_.png" data-aos="flip-down" alt="" class="img">
+                <img src="hassan73575.github.io_Weather-app_.png" alt="" class="img">
                 <p>A responsive weather application that provides real-time weather updates and forecasts.</p>
                 <div class="project-tech">
                     <span>HTML</span>
@@ -114,7 +116,7 @@
                     <span>JavaScript</span>
                     <span>Weather API</span>
                 </div>
-                <a href="https://hassan73575.github.io/Weather-app/" data-aos="flip-down" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                <a href="https://hassan73575.github.io/Weather-app/" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
             </div>
             <div class="project-card" data-aos="zoom-out-up">
                 <h3>Real Estate Website</h3>
@@ -125,6 +127,19 @@
                     <span>CSS</span>
                     <span>JavaScript</span>
                     <span>JSON</span>
+                    <span>Bootstrap</span>
+                </div>
+                <a href="https://hassan73575.github.io/Real-estate/" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="project-card" data-aos="zoom-out-up">
+                <h3>Prime Fit Elite</h3>
+                <img src="Prime-Fite-Elite.png" alt="" class="img">
+                <p>Prime Fit Elite is a responsive fitness website showcasing gym programs, training services, and membership options.</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Bootstrap</span>
                 </div>
                 <a href="https://hassan73575.github.io/Real-estate/" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
             </div>
@@ -172,6 +187,7 @@
       <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
   </div>
+  
   <div class="footer-bottom">
     <p>© 2025 Hassan Anjum | All Rights Reserved</p>
   </div>
@@ -180,7 +196,7 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
-      duration: 1200,
+      duration: 1500,
       once: false
   });
 </script>
