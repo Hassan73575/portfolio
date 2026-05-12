@@ -178,7 +178,7 @@ section h2 {
 .about-content img {
     width: 300px;
     border-radius: 10px;
-    border: 2px solid #a855f7;
+    border: 2px solid #ccd6f6;
 }
 
 .education-item, .skill-item {
@@ -188,14 +188,25 @@ section h2 {
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-.project-card {
+/* .project-card {
     width: 350px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
+} */
+
+.project-card {
+    width: 100%;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
 
 .education-item {
     padding: 2rem;
@@ -205,7 +216,7 @@ section h2 {
 .img{
     width: 100%;
     border-radius: 10px;
-    border: 2px solid #a855f7;
+    border: 2px solid #ccd6f6;
 }
 
 .skills-grid {
@@ -230,16 +241,116 @@ section h2 {
     padding: 1rem;
     text-align: center;
     cursor: pointer;
+    width: 200px;
+    height: 100px;
+}
+skills-section{
+    width:90%;
+    max-width:600px;
 }
 
-.projects-grid {
+.skills-section h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:40px;
+    color:#00c6ff;
+}
+
+.skill-item{
+    margin-bottom:25px;
+}
+
+.skill-info{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.progress-bar{
+    width:100%;
+    height:12px;
+    background:#333;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress{
+    height:100%;
+    border-radius:20px;
+    background:linear-gradient(90deg,#00c6ff,#0072ff);
+    animation:load 2s ease;
+}
+
+/* Individual Skill Widths */
+
+.html{
+    width:90%;
+}
+
+.css{
+    width:85%;
+}
+
+.javascript{
+    width:75%;
+}
+
+.bootstrap{
+    width:80%;
+}
+
+.seo{
+    width:70%;
+}
+
+.json{
+    width:65%;
+}
+
+.xml{
+    width:60%;
+}
+
+.php{
+    width:72%;
+}
+
+.laravel{
+    width:68%;
+}
+
+.wordpress{
+    width:88%;
+}
+
+/* Animation */
+
+@keyframes load{
+    from{
+        width:0;
+    }
+}
+
+/* .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    /* max-width: 800px; */
+    max-width: 800px;
     margin: 0 auto;
+} */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    width: 100%;
 }
-
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 .project-card {
     padding: 2rem;
 }
@@ -364,12 +475,13 @@ section h2 {
     
 }
 @media (max-width: 768px) {
-    .projects-grid{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
-    .project-card{
-        width: 300px;
+
+    .project-card {
+        width: 100%;
+        padding: 1.5rem;
     }
     .hero-image {
         top: 50%;
@@ -386,7 +498,11 @@ section h2 {
     grid-template-columns: repeat(repeat(1, 1fr));
     font-size: 12px;
     }
-    
+    .skill-item{
+        width: 100%;
+        height: auto;
+        
+    }
     
     .nav {
         flex-direction: column;
